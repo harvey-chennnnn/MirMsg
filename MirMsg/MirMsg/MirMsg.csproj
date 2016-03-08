@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86B9A4A9-DECB-4D13-83BF-E92D07A50D70}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MirMsg</RootNamespace>
+    <AssemblyName>MirMsg</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\search_btn.png" />
+    <Content Include="Images\ft_btn1.png" />
+    <Content Include="Images\h5_bg.jpg" />
+    <Content Include="Images\h5_words.png" />
+    <Content Include="Images\ico.png" />
+    <Content Include="Images\56a0a2f376c65.jpeg" />
+    <Content Include="Images\56a0ac88ae118.jpeg" />
+    <Content Include="Images\56a0acf2d98a6.jpeg" />
+    <Content Include="Images\56a0ae7445e1d.jpeg" />
+    <Content Include="Images\56a0c078873c9.jpeg" />
+    <Content Include="Images\56a0c97c9c25f.jpeg" />
+    <Content Include="Images\56a0ceefd8719.jpeg" />
+    <Content Include="Images\56a0d16d1d4ed.jpeg" />
+    <Content Include="Images\56a0d9058cafd.jpeg" />
+    <Content Include="Images\56a0dcb51a25c.jpeg" />
+    <Content Include="Images\56a0e2b8bdac9.jpeg" />
+    <Content Include="Images\56a0eb3539cd3.jpeg" />
+    <Content Include="Images\56a0eeee6e72a.jpeg" />
+    <Content Include="Images\56a17e31349ba.jpeg" />
+    <Content Include="Images\56a186f6a1eb4.jpeg" />
+    <Content Include="Images\56a1f5bc35151.jpeg" />
+    <Content Include="Images\56a2e169aed31.jpeg" />
+    <Content Include="Images\56a88dadcbadf.jpeg" />
+    <Content Include="Images\56a88f20635b7.jpeg" />
+    <Content Include="Images\56a9fc4415bff.jpeg" />
+    <Content Include="Images\award1.png" />
+    <Content Include="Images\award2.png" />
+    <Content Include="Css\common.css" />
+    <Content Include="Images\pc_sun.png" />
+    <Content Include="Images\pc_vote_btn.png" />
+    <Content Include="Images\placeholder.jpg" />
+    <Content Include="Images\ranking_ico.png" />
+    <Content Include="Images\shareinwx.png" />
+    <Content Include="Images\share_ico.png" />
+    <Content Include="Images\sun.png" />
+    <Content Include="Images\white-snowflake.png" />
+    <Content Include="Js\doT.min.js" />
+    <Content Include="Css\frozen.css" />
+    <Content Include="Js\hm.js" />
+    <Content Include="Images\index2.jpg" />
+    <Content Include="Js\jquery-1.4.4.min.js" />
+    <Content Include="Js\jquery.lazyload.min.js" />
+    <Content Include="Js\jweixin-1.0.0.js" />
+    <Content Include="Js\loadmessage.js" />
+    <Content Include="Css\swiper.min.css" />
+    <Content Include="Js\swiper.min.js" />
+    <Content Include="Images\top_banner.jpg" />
+    <Content Include="Js\wxShare.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3954</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3688/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
