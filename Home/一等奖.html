@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" href="./Home_files/Css/frozen.css">
+    <link rel="stylesheet" href="./Home_files/Css/swiper.min.css">
+    <link rel="stylesheet" href="./Home_files/Css/common.css">
+    <script src="./Home_files/jquery-1.4.4.min.js"></script>
+</head>
+<body>
+    <div class="top_banner">
+        <div class="swiper">
+            <div class="swiper-container swiper-container-horizontal">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-320px, 0px, 0px);">
+                    <div class="swiper-slide swiper-slide-prev" style="width: 320px;">
+                        <a href="http://yanzhi2.c.xibeiol.com/index.php?m=home&amp;c=public&amp;a=register"><img src="./Home_files/top_banner.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" style="width: 320px;">
+                        <a href="https://wap.koudaitong.com/v2/showcase/feature?alias=16kzlksqm"><img src="./Home_files/index2.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-clickable"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+        </div>
+
+        <div class="nav">
+            <span>
+                <i>报名人数</i>
+                <em>689</em>
+            </span>
+            <span>
+                <i>浏览次数</i>
+                <em>385197</em>
+            </span>
+            <span>
+                <i>活动转发</i>
+                <em>29034</em>
+            </span>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="list_head">
+
+            <div class="awards_tab">
+                <a href="http://yanzhi2.c.xibeiol.com/index.php?m=home&amp;c=index&amp;a=awards&amp;tab=award1" class="active">一等奖</a>
+                <a href="http://yanzhi2.c.xibeiol.com/index.php?m=home&amp;c=index&amp;a=awards&amp;tab=award2">二等奖</a>
+            </div>
+        </div>
+        <script id="data_tpl" type="text/x-dot-template">
+            <li class="tb_hd">
+                <span>名次</span>
+                <span>选手</span>
+                <span>电话</span>
+                <span>时间</span>
+            </li>
+            {{ for (var i=0; i
+            <it.length; i++){ }}
+                <li class="item" data-id="{{=it[i].uid}}">
+                    <span>{{= i+1+((page-1)*20)}}</span>
+                    <span onclick="to_detail({{=it[i].uid}})"><b><em><img src="/Data/images/{{=it[i].babypic}}" alt="" /></em>{{=it[i].babyname}}</b></span>
+                    <span>{{=it[i].usertel}}</span>
+                    <span><i>{{=it[i].create_time}}</i></span>
+                </li>
+                {{}}}
+        </script>
+        <div class="awards_list">
+            <ul id="content_container">
+                <li class="tb_hd">
+                    <span width="28">名次</span>
+                    <span>选手</span>
+                    <span>电话</span>
+                    <span>时间</span>
+                </li>
+
+                <li class="item" data-id="10081">
+                    <span>1</span>
+                    <span onclick="to_detail(10081)"><b><em><img src="./Home_files/56a0a4d318b5e.jpeg" alt=""></em>清清流水</b></span>
+                    <span>180****8508</span>
+                    <span><i>2016-01-21<br>17:28:51</i></span>
+                    <!-- <span  style="background:#000;">180****8508</span>
+                    <span><i>2016-01-21<br>17:28:51</i></span>-->
+                </li>
+                <li class="item" data-id="10524">
+                    <span>2</span>
+                    <span onclick="to_detail(10524)"><b><em><img src="./Home_files/56a2deb112867.jpeg" alt=""></em>Odelia</b></span>
+                    <span>150****9285</span>
+                    <span><i>2016-01-23<br>10:00:17</i></span>
+                    <!-- <span  style="background:#000;">150****9285</span>
+                    <span><i>2016-01-23<br>10:00:17</i></span>-->
+                </li>
+                <li class="item" data-id="10235">
+                    <span>3</span>
+                    <span onclick="to_detail(10235)"><b><em><img src="./Home_files/56a0b79b429a9.jpeg" alt=""></em>钱多多</b></span>
+                    <span>186****4934</span>
+                    <span><i>2016-01-21<br>18:48:59</i></span>
+                    <!-- <span  style="background:#000;">186****4934</span>
+                    <span><i>2016-01-21<br>18:48:59</i></span>-->
+                </li>
+                <li class="item" data-id="10078">
+                    <span>4</span>
+                    <span onclick="to_detail(10078)"><b><em><img src="./Home_files/56a0a4b00c6b7.jpeg" alt=""></em>白色郭</b></span>
+                    <span>181****7077</span>
+                    <span><i>2016-01-21<br>17:28:16</i></span>
+                    <!-- <span  style="background:#000;">181****7077</span>
+                    <span><i>2016-01-21<br>17:28:16</i></span>-->
+                </li>
+                <li class="item" data-id="10054">
+                    <span>5</span>
+                    <span onclick="to_detail(10054)"><b><em><img src="./Home_files/56a0a31735887.jpeg" alt=""></em>虎牙妹</b></span>
+                    <span>132****6105</span>
+                    <span><i>2016-01-21<br>17:21:27</i></span>
+                    <!-- <span  style="background:#000;">132****6105</span>
+                    <span><i>2016-01-21<br>17:21:27</i></span>-->
+                </li>
+                <li class="item" data-id="10260">
+                    <span>6</span>
+                    <span onclick="to_detail(10260)"><b><em><img src="./Home_files/56a0c11743b6a.jpeg" alt=""></em>杏儿</b></span>
+                    <span>150****4282</span>
+                    <span><i>2016-01-21<br>19:29:27</i></span>
+                    <!-- <span  style="background:#000;">150****4282</span>
+                    <span><i>2016-01-21<br>19:29:27</i></span>-->
+                </li>
+                <li class="item" data-id="10241">
+                    <span>7</span>
+                    <span onclick="to_detail(10241)"><b><em><img src="./Home_files/56a0b99e44c32.jpeg" alt=""></em>安谧</b></span>
+                    <span>183****3323</span>
+                    <span><i>2016-01-21<br>18:57:34</i></span>
+                    <!-- <span  style="background:#000;">183****3323</span>
+                    <span><i>2016-01-21<br>18:57:34</i></span>-->
+                </li>
+                <li class="item" data-id="10180">
+                    <span>8</span>
+                    <span onclick="to_detail(10180)"><b><em><img src="./Home_files/56a0ae7445e1d.jpeg" alt=""></em>黑负内</b></span>
+                    <span>150****7805</span>
+                    <span><i>2016-01-21<br>18:09:56</i></span>
+                    <!-- <span  style="background:#000;">150****7805</span>
+                    <span><i>2016-01-21<br>18:09:56</i></span>-->
+                </li>
+                <li class="item" data-id="10342">
+                    <span>9</span>
+                    <span onclick="to_detail(10342)"><b><em><img src="./Home_files/56a0e7feca23e.jpeg" alt=""></em>暖阳。</b></span>
+                    <span>182****7636</span>
+                    <span><i>2016-01-21<br>22:15:26</i></span>
+                    <!-- <span  style="background:#000;">182****7636</span>
+                    <span><i>2016-01-21<br>22:15:26</i></span>-->
+                </li>
+                <li class="item" data-id="10177">
+                    <span>10</span>
+                    <span onclick="to_detail(10177)"><b><em><img src="./Home_files/56a0ae3549193.jpeg" alt=""></em>飘飘清风</b></span>
+                    <span>153****1242</span>
+                    <span><i>2016-01-21<br>18:08:53</i></span>
+                    <!-- <span  style="background:#000;">153****1242</span>
+                    <span><i>2016-01-21<br>18:08:53</i></span>-->
+                </li>
+            </ul>
+        </div>
+
+        <div class="pages" id="pages">
+            <a href="javascript:void(0)" onclick="javascript:go_to_page(&#39;first&#39;);" id="first_page">首页</a>
+            <a href="javascript:void(0)" onclick="javascript:go_to_page(&#39;last&#39;);" id="uppage">上一页</a>
+            <a href="javascript:void(0)" onclick="go_to_page(&#39;next&#39;);" id="downpage">下一页</a>
+            <a href="javascript:void(0)" onclick="javascript:go_to_page(&#39;end&#39;);" id="last_page">尾页</a>
+        </div>
+
+    </div>
+
+
+    <footer class="foot1">
+        <!-- 未参与用户底部菜单 -->
+        <div class="main clearfix">
+            <a href="http://yanzhi2.c.xibeiol.com/index.php?m=home&amp;c=index&amp;a=index">回到首页</a>
+            <a href="http://yanzhi2.c.xibeiol.com/index.php?m=home&amp;c=public&amp;a=register">我要参加</a>
+        </div>
+    </footer>
+    <div id="loading" class="hide">
+        <div id="toast">
+            <div id="toast-container">
+                <div id="content-container" class="hide item">
+                    <div class="content" id="content">已经到头了</div>
+                </div>
+                <div id="spinner-container" class="item">
+                    <div class="content spinner" id="progress">
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Home_files/jweixin-1.0.0.js"></script>
+    <script src="./Home_files/wxShare.js"></script>
+    <script src="./Home_files/doT.min.js"></script>
+    <script src="./Home_files/loadmessage.js"></script>
+    <script src="./Home_files/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 0,
+            autoplay: 2000,
+            autoplayDisableOnInteraction: false
+        });
+    </script>
+    <script>
+
+        //跳转到宝宝详情
+        // $(".awards_list .item").tap(function(){
+        //     var baby_id=$(this).data("id");
+        //     location.href="http://yanzhi2.c.xibeiol.com/index.php?m=home&c=member&a=detail&id="+baby_id;
+        // })
+        function to_detail(baby_id){
+
+            location.href="http://yanzhi2.c.xibeiol.com/index.php?m=home&c=member&a=detail&id="+baby_id;
+        }
+    </script>
+    <script>
+        var page = 1;
+
+        var last_page = ;
+        if(last_page == 1){
+            $("#pages").addClass("hide");
+        }
+        $("#first_page").addClass('cancel');
+        go_to_page = function(direction){
+            if(direction==="last"){
+                if(page >= 1){
+                    page--;
+                }
+            }else if(direction==="first"){
+                page=1;
+            }else if(direction==="end"){
+                page=;
+            }else{
+                page++;
+            }
+            $("#last_page").removeClass('cancel');
+            $("#first_page").removeClass('cancel');
+            if(page==){
+                $("#last_page").addClass('cancel');
+        }else if(page==1){
+            $("#first_page").addClass('cancel');
+
+        }
+        $.ajax({
+
+            type: "post",
+
+            url: "http://yanzhi2.c.xibeiol.com/index.php?m=home&c=index&a=award1ajax",
+            data:{
+                'page':page
+            },
+            beforeSend: function(XMLHttpRequest){
+
+                ShowLoading();
+            },
+            success: function(data, textStatus){
+                console.log("data");
+                console.log(data);
+                if(data==null || data==""){
+                    ShowMessageTips('已经到头了');
+                    if(direction==="last"){
+                        if(page >= 0){
+                            page++;
+                        }
+                    }else{
+                        page--;
+                    }
+
+                }else{
+                    console.log(data);
+                    var tempFn = doT.template($("#data_tpl").text());
+                    $("#content_container").html(tempFn(data));
+
+                }
+
+
+            },
+
+            complete: function(XMLHttpRequest, textStatus){
+                console.info("complete");
+
+                HideLoading();
+            },
+            error: function(){
+                //请求出错处理
+                console.info("error");
+                HideLoading();
+                ShowMessageTips('系统请求出错，请重试');
+
+            }
+        })
+        }
+
+        wx.config({
+            debug:false,
+            appId: 'wx42d7c33c29c1c1a0',
+            timestamp: 1457263563,
+            nonceStr: 'QuHo88Lzg0kwKEgh',
+            signature: '7632f69a66770d1cfd04cfa9dba5f9535a0bd005',
+            jsApiList: [
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'showOptionMenu',
+                'closeWindow',
+                'hideMenuItems',
+              // 所有要调用的 API 都要加到这个列表中
+            ]
+        });
+        WxShare.setIndexdata("http://yanzhi2.c.xibeiol.com/Data/images/share.png","http://yanzhi2.c.xibeiol.com/index.php?m=home&c=index&a=h5");
+    </script>
+
+</body>
+</html>

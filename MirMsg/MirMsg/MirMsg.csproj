@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
+    <Content Include="Home.html" />
     <Content Include="Images\search_btn.png" />
     <Content Include="Images\ft_btn1.png" />
     <Content Include="Images\h5_bg.jpg" />

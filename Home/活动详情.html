@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>活动详情</title>
+    <link rel="stylesheet" href="./Home_files/Css/frozen.css">
+    <link rel="stylesheet" href="./Home_files/Css/swiper.min.css">
+    <link rel="stylesheet" href="./Home_files/Css/common.css">
+    <script src="./Home_files/jquery-1.4.4.min.js"></script>
+</head>
+<body class="active">
+    <div class="top_banner">
+        <div class="swiper">
+            <div class="swiper-container swiper-container-horizontal">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; -webkit-transition-duration: 0ms; transform: translate3d(-963px, 0px, 0px); -webkit-transform: translate3d(-963px, 0px, 0px);">
+                    <div class="swiper-slide swiper-slide-prev" style="width: 963px;">
+                        <a href="http://yanzhi2.c.xibeiol.com/index.php?m=home&c=public&a=register">
+                            <img src="./Home_files/top_banner.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" style="width: 963px;">
+                        <a href="https://wap.koudaitong.com/v2/showcase/feature?alias=16kzlksqm">
+                            <img src="./Home_files/index2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-clickable"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+        </div>
+
+        <div class="nav">
+            <span>
+                <i>报名人数</i>
+                <em></em>
+            </span>
+            <span>
+                <i>浏览次数</i>
+                <em></em>
+            </span>
+            <span>
+                <i>活动转发</i>
+                <em></em>
+            </span>
+        </div>
+    </div>
+
+    <div class="wrap">
+
+        <h2 class="tit">活动详情</h2>
+        <div class="summary">
+            <b>拼颜值 免费滑雪</b>
+            <b>活动主办：西安白鹿原滑雪场</b>
+            <p>活动协办：约滑雪，网易陕西，滴滴出行，今日头条，荣耀西安，西安妈妈网，凤城5路，助手科技，青校园网，我爱西安，新居时代 </p>
+        </div>
+        <div class="summary">
+            <p>活动时间：</p>
+            <p>2016年1月21日—28日22:00</p>
+            <p>&nbsp;</p>
+            <p>活动规则：</p>
+            <p>1 关注【白鹿原滑雪场】微信公众账号参加活动</p>
+            <p>2 上传一张自己的靓照参与颜值大比拼。把自己的主题活动页面分享给朋友收集爱心。</p>
+            <p>3 活动期间内，收集“颜值”最多的前150名网友获得奖励。</p>
+            <p>4 前50名，活动情侣滑雪票通票一张，51-150名获得单人滑雪通票一张。</p>
+            <p>&nbsp;</p>
+            <p>特别说明:</p>
+            <p>1 恶意刷票将会被取消资格。</p>
+            <p>2 活动结束后，请通过微信公众后台回复：姓名+电话+名次，领取奖品（电子票）</p>
+            <p>3 本活动最终解释权归白鹿原滑雪场所有</p>
+        </div>
+    </div>
+
+    <footer class="foot1">
+        <!-- 尚未参加的用户底部菜单 -->
+        <div class="main clearfix">
+            <a href="http://yanzhi2.c.xibeiol.com/index.php?m=home&amp;c=index&amp;a=ranking">颜值榜</a>
+            <a href="http://yanzhi2.c.xibeiol.com/index.php?m=home&amp;c=public&amp;a=register">我要参加</a>
+        </div>
+    </footer>
+    <script src="./Home_files/swiper.min.js"></script>
+    <script src="./Home_files/jweixin-1.0.0.js"></script>
+    <script src="./Home_files/wxShare.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 0,
+            autoplay: 2000,
+            autoplayDisableOnInteraction: false
+        });
+        wx.config({
+            // debug:true,
+            appId: 'wx42d7c33c29c1c1a0',
+            timestamp: 1457263408,
+            nonceStr: 'xn692dxqw1Nxerk7',
+            signature: 'fb90d96b913c8fbad45a6fbf5c0d42530871587f',
+            jsApiList: [
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'showOptionMenu',
+                'closeWindow',
+                'hideMenuItems',
+              // 所有要调用的 API 都要加到这个列表中
+            ]
+        });
+        WxShare.setIndexdata("", "");
+    </script>
+
+</body>
+</html>

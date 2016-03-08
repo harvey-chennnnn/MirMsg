@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>拼颜值</title>
+    <link rel="stylesheet" href="./Home_files/Css/frozen.css">
+    <link rel="stylesheet" href="./Home_files/Css/swiper.min.css">
+    <link rel="stylesheet" href="./Home_files/Css/common.css">
+    <script src="./Home_files/jquery-1.4.4.min.js"></script>
+</head>
+<body>
+    <div class="top_banner">
+        <div class="swiper">
+            <div class="swiper-container swiper-container-horizontal">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; -webkit-transition-duration: 0ms; transform: translate3d(-963px, 0px, 0px); -webkit-transform: translate3d(-963px, 0px, 0px);">
+                    <div class="swiper-slide swiper-slide-prev" style="width: 963px;">
+                        <a href="http://yanzhi2.c.xibeiol.com/index.php?m=home&c=public&a=register">
+                            <img src="./Home_files/top_banner.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" style="width: 963px;">
+                        <a href="https://wap.koudaitong.com/v2/showcase/feature?alias=16kzlksqm">
+                            <img src="./Home_files/index2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-clickable"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+        </div>
+
+        <div class="nav">
+            <span>
+                <i>报名人数</i>
+                <em>689</em>
+            </span>
+            <span>
+                <i>浏览次数</i>
+                <em>385201</em>
+            </span>
+            <span>
+                <i>活动转发</i>
+                <em>29034</em>
+            </span>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="list_head">
+            <h2 class="tit yzb">颜值榜</h2>
+            <div class="search_bar">
+                <form action="http://yanzhi2.c.xibeiol.com/index.php?m=home&amp;c=index&amp;a=search" name="searchform" method="post">
+                    <input type="search" name="input" id="input" placeholder="请输入编号或昵称">
+                    <button></button>
+                </form>
+            </div>
+        </div>
+        <!-- add by skyer -->
+        <script id="data_tpl" type="text/x-dot-template">
+            <li class="tb_hd" id="data-title">
+                <span>名次</span>
+                <span>选手</span>
+                <span>爱心总数</span>
+            </li>
+            {{ for (var i=0; i
+            <it.length; i++){ }}
+                <li class="item" onclick="javascript:go_to_detail({{=it[i].uid}})">
+                    {{if(i+1+((page-1)*10) <= 3){}}
+                    <span class="top-three">
+                        {{}else if(i+1+((page-1)*10) <= 10){}}
+                        <span class="top-more">
+                            {{}else{}}
+                            <span>
+                                {{ }}}
+                                <i><em>{{= i+1+((page-1)*10)}}</em></i>
+                            </span>
+
+                            <span><em><img src="/Data/images/{{=it[i].babypic}}" alt="" /></em><b>{{=it[i].babyname}}</b></span>
+                            <span>{{=it[i].vote_num}}</span>
+                </li>
+                {{ } }}
+        </script>
+        <div class="ranking_list">
+            <ul id="data_container">
+                <li class="tb_hd" id="data-title">
+                    <span>名次</span>
+                    <span>选手</span>
+                    <span>爱心总数</span>
+                </li>
+
+
+                <li class="item" data-id="10081">
+
+                    <span class="top-three"><i><em>1</em></i></span>
+
+                    <span><em><img src="./Home_files/56a0a4d318b5e.jpeg" alt=""></em><b>清清流水</b></span>
+                    <span>629</span>
+                </li>
+                <li class="item" data-id="10524">
+
+                    <span class="top-three"><i><em>2</em></i></span>
+
+                    <span><em><img src="./Home_files/56a2deb112867.jpeg" alt=""></em><b>Odelia</b></span>
+                    <span>592</span>
+                </li>
+                <li class="item" data-id="10235">
+
+                    <span class="top-three"><i><em>3</em></i></span>
+
+                    <span><em><img src="./Home_files/56a0b79b429a9.jpeg" alt=""></em><b>钱多多</b></span>
+                    <span>543</span>
+                </li>
+                <li class="item" data-id="10078">
+
+
+                    <span class="top-more"><i><em>4</em></i></span>
+                    <span><em><img src="./Home_files/56a0a4b00c6b7.jpeg" alt=""></em><b>白色郭</b></span>
+                    <span>540</span>
+                </li>
+                <li class="item" data-id="10054">
+
+
+                    <span class="top-more"><i><em>5</em></i></span>
+                    <span><em><img src="./Home_files/56a0a31735887.jpeg" alt=""></em><b>虎牙妹</b></span>
+                    <span>492</span>
+                </li>
+                <li class="item" data-id="10260">
+
+
+                    <span class="top-more"><i><em>6</em></i></span>
+                    <span><em><img src="./Home_files/56a0c11743b6a.jpeg" alt=""></em><b>杏儿</b></span>
+                    <span>491</span>
+                </li>
+                <li class="item" data-id="10241">
+
+
+                    <span class="top-more"><i><em>7</em></i></span>
+                    <span><em><img src="./Home_files/56a0b99e44c32.jpeg" alt=""></em><b>安谧</b></span>
+                    <span>481</span>
+                </li>
+                <li class="item" data-id="10180">
+
+
+                    <span class="top-more"><i><em>8</em></i></span>
+                    <span><em><img src="./Home_files/56a0ae7445e1d.jpeg" alt=""></em><b>黑负内</b></span>
+                    <span>477</span>
+                </li>
+                <li class="item" data-id="10342">
+
+
+                    <span class="top-more"><i><em>9</em></i></span>
+                    <span><em><img src="./Home_files/56a0e7feca23e.jpeg" alt=""></em><b>暖阳。</b></span>
+                    <span>409</span>
+                </li>
+                <li class="item" data-id="10177">
+
+
+                    <span class="top-more"><i><em>10</em></i></span>
+                    <span><em><img src="./Home_files/56a0ae3549193.jpeg" alt=""></em><b>飘飘清风</b></span>
+                    <span>401</span>
+                </li>
+            </ul>
+        </div>
+        <div class="pages" id="pages">
+            <a href="javascript:void(0)" onclick="javascript:go_to_page(&#39;first&#39;);" id="first_page" class="cancel">首页</a>
+            <a href="javascript:void(0)" onclick="javascript:go_to_page(&#39;last&#39;);" id="uppage">上一页</a>
+            <a href="javascript:void(0)" onclick="go_to_page(&#39;next&#39;);" id="downpage">下一页</a>
+            <a href="javascript:void(0)" onclick="javascript:go_to_page(&#39;end&#39;);" id="last_page">尾页</a>
+        </div>
+
+    </div>
+
+    <footer class="foot1">
+        <!-- 未参与用户底部菜单 -->
+        <div class="main clearfix">
+            <a href="http://yanzhi2.c.xibeiol.com/index.php?m=home&amp;c=index&amp;a=index">回到首页</a>
+            <a href="http://yanzhi2.c.xibeiol.com/index.php?m=home&amp;c=public&amp;a=register">我要参加</a>
+        </div>
+    </footer>
+
+    <!-- add by skyer -->
+    <div id="loading" class="hide">
+        <div id="toast">
+            <div id="toast-container">
+                <div id="content-container" class="hide item">
+                    <div class="content" id="content">已经到头了</div>
+                </div>
+                <div id="spinner-container" class="item">
+                    <div class="content spinner" id="progress">
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Home_files/jweixin-1.0.0.js"></script>
+    <script src="./Home_files/wxShare.js"></script>
+    <script src="./Home_files/doT.min.js"></script>
+    <script src="./Home_files/loadmessage.js"></script>
+    <script src="./Home_files/zepto.min.js"></script>
+    <script src="./Home_files/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 2,
+            autoplay:2000
+        });
+    </script>
+    <script>
+        go_to_detail = function(id){
+            location.href="/index.php?m=home&c=member&a=detail&id="+id;
+
+        }
+        //跳转到宝宝详情
+        $(".ranking_list .item").tap(function(){
+            var baby_id=$(this).data("id");
+            location.href="/index.php?m=home&c=member&a=detail&id="+baby_id;
+        })
+    </script>
+    <!-- add by skyer -->
+    <script>
+        var page = 1;
+        $("#first_page").addClass('cancel');
+
+        go_to_page = function(direction){
+            console.info("go_to_page"+page);
+
+            if(direction==="last"){
+                if(page >= 1){
+                    page--;
+                }
+            }else if(direction==="first"){
+                page=1;
+            }else if(direction==="end"){
+                page=69;
+            }else{
+                page++;
+            }
+            $("#last_page").removeClass('cancel');
+            $("#first_page").removeClass('cancel');
+            if(page==69){
+                $("#last_page").addClass('cancel');
+            }else if(page==1){
+                $("#first_page").addClass('cancel');
+
+            }
+            $.ajax({
+
+                type: "POST",
+                dataType: "json",
+                url: "http://yanzhi2.c.xibeiol.com/index.php?m=home&c=index&a=rankingajax",
+                data:{
+                    'page':page
+                },
+                beforeSend: function(XMLHttpRequest){
+
+                    ShowLoading();
+                },
+                success: function(data, textStatus){
+
+                    if(data==null || data==""){
+                        ShowMessageTips("已经到头了");
+                        if(direction==="last"){
+                            if(page >= 0){
+                                page++;
+                            }
+                        }else{
+                            page--;
+                        }
+
+                    }else{
+                        console.log(data);
+                        // console.info($("#data_tpl").text());
+                        var tempFn = doT.template($("#data_tpl").text());
+                        // $('#data_container').html("");
+                        $("#data_container").html(tempFn(data));
+                    }
+
+
+                },
+
+                complete: function(XMLHttpRequest, textStatus){
+
+                    HideLoadingOnly();
+                },
+                error: function(){
+                    HideLoading();
+                    ShowMessageTips("系统请求出错");
+
+                    //请求出错处理
+                }
+            });
+        }
+        wx.config({
+            // debug:true,
+            appId: 'wx42d7c33c29c1c1a0',
+            timestamp: 1457263796,
+            nonceStr: 'PcdoU5g9elZdAnb6',
+            signature: 'be1d999f862c1922b741007725f0f1a6142a5706',
+            jsApiList: [
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'showOptionMenu',
+                'closeWindow',
+                'hideMenuItems',
+              // 所有要调用的 API 都要加到这个列表中
+            ]
+        });
+        WxShare.setRankingdata(689,"http://yanzhi2.c.xibeiol.com/Data/images/share.png","http://yanzhi2.c.xibeiol.com/index.php?m=home&c=index&a=ranking");
+    </script>
+    <script>
+        $('button').on("click",function(){
+            var input = $('#input').val();
+            if(input==""){
+                return false;
+            }
+            document.searchform.submit();
+        });
+    </script>
+
+</body>
+</html>
